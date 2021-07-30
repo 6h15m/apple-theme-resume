@@ -1,29 +1,19 @@
-import React from 'react';
-import './styles/Global.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import About from './components/About';
-import Skills from './components/Skills';
-import ProjectsPrev from './components/ProjectsPrev';
-import Awards from './components/Awards';
-import Club from './components/Club';
-import Certificate from './components/Certificate';
-import Footer from './components/Footer';
+import React, { Component } from 'react';
+import GlobalStyle from './styles/GlobalStyle';
+import { Route } from 'react-router-dom';
+import { About, Project, Contact } from './pages';
 
-const App = () => {
-  return (
-    <div className="App">
-      <Header />
-      <Main />
-      <About />
-      <Skills />
-      <ProjectsPrev />
-      <Awards />
-      <Club />
-      <Certificate />
-      <Footer />
-    </div>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <GlobalStyle />
+        <Route exact path="/" component={About} />
+        <Route path="/project" component={Project} />
+        <Route path="/contact" component={Contact} />
+      </div>
+    );
+  }
+}
 
 export default App;
