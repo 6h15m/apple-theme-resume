@@ -1,10 +1,12 @@
 import React from 'react';
+import Layout from '../components/Layout';
+import { ProjectList } from '../components/project';
 
 const Project = () => {
   return (
-    <div>
-      <h2>프로젝트</h2>
-    </div>
+    <Layout>
+      <ProjectList></ProjectList>
+    </Layout>
   );
 };
 
