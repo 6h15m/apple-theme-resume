@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import palette from '../../styles/palette';
+import { Link } from 'react-router-dom';
 
 const ProjectListBlock = styled.div`
   display: flex;
@@ -106,18 +107,20 @@ const ProjectList = () => {
         <div className="tag">#Design</div>
       </div>
       <div className="project-container">
-        <div className="project">
-          <hr />
-          <div className="project-number">No.01</div>
-          <div className="project-name">미림 인 포토</div>
-          <div className="project-description">
-            교내 사진부의 '미림 인 포토' 프로젝트 예약 및 포트폴리오 사이트
+        <Link to="project/1">
+          <div className="project">
+            <hr />
+            <div className="project-number">No.01</div>
+            <div className="project-name">미림 인 포토</div>
+            <div className="project-description">
+              교내 사진부의 '미림 인 포토' 프로젝트 예약 및 포트폴리오 사이트
+            </div>
+            <div className="bottom">
+              <div className="project-term">2021.03-2021.06</div>
+              <img src="img/svg/right_arrow_big.svg" alt="right arrow" />
+            </div>
           </div>
-          <div className="bottom">
-            <div className="project-term">2021.03-2021.06</div>
-            <img src="img/svg/right_arrow_big.svg" alt="right arrow" />
-          </div>
-        </div>
+        </Link>
         <div className="project">
           <hr />
           <div className="project-number">No.02</div>

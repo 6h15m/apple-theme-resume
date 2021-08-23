@@ -62,7 +62,9 @@ const Header = () => {
     <>
       <HeaderBlock>
         <Wrapper>
-          <div className="logo">Yeseo Lee</div>
+          <Link to="/">
+            <div className="logo">Yeseo Lee</div>
+          </Link>
           <Menu>
             <Link to="/">
               <div className="menu-item">About</div>
