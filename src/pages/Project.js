@@ -1,11 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { ProjectList } from '../components/project';
+import { Tags, ProjectList } from '../components/project';
 
-const Project = () => {
+const Project = ({ match }) => {
+  const tag = match.params.tag || 'all';
   return (
     <Layout>
-      <ProjectList></ProjectList>
+      <Tags />
+      <ProjectList tag={tag}></ProjectList>
     </Layout>
   );
 };
