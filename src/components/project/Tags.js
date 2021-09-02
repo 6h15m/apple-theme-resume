@@ -78,7 +78,7 @@ const Tag = styled(NavLink)`
     background-clip: text;
   }
 
-  &:active {
+  &.active {
     font-weight: 700;
     background: linear-gradient(
       to right top,
@@ -96,14 +96,14 @@ const Tags = ({ onSelect, tag }) => {
     <TagsBlock>
       <div className="title">프로젝트</div>
       <div className="tags-list">
-        {tags.map((c) => (
+        {tags.map((t) => (
           <Tag
-            key={c.name}
+            key={t.name}
             activeClassName="active"
-            exact={c.name === 'all'}
-            to={c.name === 'all' ? '/project/' : `/project/${c.name}`}
+            exact={t.name === 'all'}
+            to={t.name === 'all' ? '/project' : `/project/${t.name}`}
           >
-            {c.text}
+            {t.text}
           </Tag>
         ))}
       </div>

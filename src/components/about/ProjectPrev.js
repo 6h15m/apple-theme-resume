@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import palette from '../../styles/palette';
+import { Link } from 'react-router-dom';
 
 const ProjectPrevBlock = styled.div`
   margin-top: 10rem;
@@ -138,14 +139,16 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <a href="https://github.com/6h15m" className="more-projects">
-        더 많은 프로젝트 구경하기
-        <img
-          className="right-arrow"
-          src="img/svg/right_arrow.svg"
-          alt="right arrow"
-        />
-      </a>
+      <Link to={'/project'}>
+        <div className="more-projects">
+          더 많은 프로젝트 구경하기
+          <img
+            className="right-arrow"
+            src="img/svg/right_arrow.svg"
+            alt="right arrow"
+          />
+        </div>
+      </Link>
     </ProjectPrevBlock>
   );
 };
