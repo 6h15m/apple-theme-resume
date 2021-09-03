@@ -8,7 +8,7 @@ const ProjectInfo = [
     period: '2021.03-2021.06',
     people: '개발 6명, 디자인 5명',
     technology: 'JavaScript, HTML5/CSS3, Django, MySQL',
-    mywork: ['어쩌고', '저쩌고', '일했어요'],
+    mywork: '어쩌고저쩌고 이런저런일을 했고요 재밌었습니다 하하하하하하',
     features: [
       '조건별 사진 필터링 기능',
       '리뷰 등록 기능',
@@ -17,6 +17,7 @@ const ProjectInfo = [
     github: 'https://github.com/6h15m/MIP-ITshow',
     imgUrl:
       'https://user-images.githubusercontent.com/52748335/131935920-069ec5ee-392e-4c65-8e37-fe7227bb608d.png',
+    web: '',
   },
 ];
 
