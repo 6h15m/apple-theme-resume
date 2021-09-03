@@ -13,10 +13,6 @@ const tags = [
     text: '#React',
   },
   {
-    name: 'vuejs',
-    text: '#Vue.js',
-  },
-  {
     name: 'javascript',
     text: '#JavaScript',
   },
